@@ -97,11 +97,12 @@ body {
   justify-content: center;
   align-items: center;
   }
-.mainTitle {
-    width: 34%;
+  .mainTitle {
+    width: 40%;
     word-break: break-all;
     margin: 0 auto;
-}
+    text-align: center;
+  }
 .wrapper__timer {
     width: 30%;
     margin: 0 auto;
