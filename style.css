@@ -180,7 +180,7 @@ input {
 @media (max-width: 600px) {
   #workInput, 
   #breakInput {
-    max-width: 90%;         /* Take most of screen */
+    max-width: 80%;         /* Take most of screen */
     font-size: 1.2rem;
   }
 
