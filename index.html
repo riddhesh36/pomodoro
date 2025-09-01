@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Pomodoro App with Grid Overlay</title>
   <style>
    
@@ -11,13 +12,27 @@
 </head>
 <body>
 
-    <div class="mainDiv">
-        <div class="progressBg"></div>
-        <div class="wrapper__main">
-          <div class="mainTitle"><h1>POMODORO</h1></div>
-          <h2 style="display: none;" id="timer">25  00</h2>
+    <div class="setupDiv">
+        <div id="step1">
+            <div class="inputBtn">
+                <input type="text" id="workInput" placeholder="Enter Work Time">
+                <button id="next1"><i class="fa-solid fa-arrow-right"></i></button></div>
         </div>
+      
+        <div id="step2" style="display:none;">
+            <div class="inputBtn">
+                <input type="text" id="breakInput" placeholder="Enter Break Time" />
+                <button id="next2"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+      
+      <div class="mainDiv" style="display:none;">
+        <div class="progressBg"></div>
+        <div class="mainTitle"><h1>POMODORO</h1></div>
+        <div id="timer" style="display:none;"></div>
       </div>
+      
   
   <script src="./script.js"></script>
 </body>
