@@ -147,14 +147,14 @@ body {
 
 /* Buttons */
 #next1, #next2 {
-  height: 60px;
-  width: 60px;
-  border: none;
-  border-radius: 10px;
-  background-color: transparent;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-}
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
 
 #next1:hover, 
 #next2:hover {
@@ -167,8 +167,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 50px;
   flex-wrap: wrap;          /* Makes items stack if needed */
+}
+input {
+    border-radius: 0 !important; /* remove iOS rounding */
+    -webkit-appearance: none;    /* remove iOS default styles */
+    appearance: none;            /* modern standard reset */
 }
 
 /* Media queries for smaller screens */
